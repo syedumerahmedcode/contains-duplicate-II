@@ -19,7 +19,7 @@ public class Solution {
             // If the size of the hashset is greater than k,. as in greater tha the sliding
             // window allowed.
             if (set.size() > k) {
-                // remove the most oldest element inserted ouside of the sliding window.
+                // remove the earliest element inserted in the sliding window.
                 set.remove(nums[i - k]);
             }
         }
